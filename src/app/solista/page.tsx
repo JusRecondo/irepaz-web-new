@@ -2,9 +2,9 @@ import AnimatedBlock from "@/components/animated-block"
 import ImageBox from "@/components/image-box"
 import TextBox from "@/components/text-box"
 
-export default function Home() {
+export default function Solista() {
   return (
-    <main className="w-full h-full flex flex-col item-center justify-center p-4 pb-16 max-w-7xl mx-auto">
+    <main className="w-full h-full flex flex-col item-center justify-center p-4 pb-24 max-w-7xl mx-auto">
       <TextBox>Lorem ipsum</TextBox>
       <section className="flex flex-col gap-4">
         <AnimatedBlock>
