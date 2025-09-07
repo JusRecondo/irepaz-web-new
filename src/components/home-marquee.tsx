@@ -7,7 +7,6 @@ interface Props {
   direction?: 'left' | 'right' | 'up' | 'down'
 }
 
-
 const HomeMarquee = ({ children, speed = 50, delay = 0, direction = 'left' }: Props) => {
   return (
     <Marquee className="overflow-hidden" speed={speed} delay={delay} direction={direction} gradient pauseOnHover gradientColor="#fbfbfb">

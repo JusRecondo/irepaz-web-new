@@ -33,7 +33,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+          {children}
         <Footer />
         <canvas id="hydraCanvas"></canvas>
        <Script src="/hydra.js" strategy="afterInteractive" />
