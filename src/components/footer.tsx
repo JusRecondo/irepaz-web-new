@@ -65,7 +65,7 @@ const navItems = [
 const Footer = () => {
   const pathname = usePathname()
   return (
-    <footer className="fixed bottom-0 left-0 w-full p-4 bg-black/50 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-6">
+    <footer className="fixed bottom-0 left-0 w-screen overflow-x-hidden p-4 bg-black/50 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-6">
       <ul className="w-full flex justify-center items-center gap-6">
         {rrss.map((item, i) => (
           <li key={i}>

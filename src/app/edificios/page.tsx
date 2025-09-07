@@ -5,7 +5,7 @@ import VideoBox from "@/components/video-box"
 
 export default function Home() {
   return (
-    <main className="w-full h-full flex flex-col item-center justify-center p-4 pb-16 max-w-7xl mx-auto">
+    <main className="w-full h-full flex flex-col item-center justify-center p-4 pb-16 max-w-7xl mx-auto overflow-x-hidden">
       <TextBox>Lorem ipsum</TextBox>
       <section className="flex flex-col gap-4">
         <AnimatedBlock>
