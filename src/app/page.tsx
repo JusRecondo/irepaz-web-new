@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="font-sans grid items-center justify-items-center min-h-screen p-0 gap-16 overflow-hidden">
+    <div className="font-sans grid items-center justify-items-center p-0 gap-16 overflow-hidden h-[calc(100vh-56px)]">
       <main className="w-full h-full flex flex-col gap-[32px] item-center justify-center">
         <HomeMarquee>
           <Link href="/solista" className="text-4xl w-full hover:text-amber-800">IRE PAZ SOLISTA</Link>
