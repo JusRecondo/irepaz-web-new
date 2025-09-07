@@ -36,7 +36,6 @@ export default function RootLayout({
         {children}
         <Footer />
         <canvas id="hydraCanvas"></canvas>
-        {/* <script src="/lib/hydra.js"></script> */}
        <Script src="/hydra.js" strategy="afterInteractive" />
       </body>
     </html>
