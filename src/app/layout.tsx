@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer";
+import Head from "next/head";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,11 +27,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        <script src="https://unpkg.com/hydra-synth"></script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
         <Footer />
+        <canvas id="hydraCanvas"></canvas>
+        {/* <script src="/lib/hydra.js"></script> */}
+       <Script src="/hydra.js" strategy="afterInteractive" />
       </body>
     </html>
   );
