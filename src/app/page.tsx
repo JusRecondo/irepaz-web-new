@@ -1,5 +1,4 @@
 import HomeMarquee from "@/components/home-marquee";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -7,19 +6,19 @@ export default function Home() {
     <div className="font-sans grid items-center justify-items-center p-0 gap-16 overflow-hidden h-[calc(100vh-56px)]">
       <main className="w-full h-full flex flex-col gap-[32px] item-center justify-center">
         <HomeMarquee>
-          <Link href="/solista" className="text-4xl w-full hover:text-amber-800">IRE PAZ SOLISTA</Link>
+          <Link href="/solista" className="text-4xl lg:text-5xl w-full hover:text-amber-800">IRE PAZ SOLISTA</Link>
         </HomeMarquee>
         <HomeMarquee speed={55} delay={1} direction="right">
-          <Link href="/edificios" className="text-4xl w-full hover:text-purple-800">EDIFICIOS</Link>
+          <Link href="/edificios" className="text-4xl lg:text-5xl w-full hover:text-purple-300">EDIFICIOS</Link>
         </HomeMarquee>
         <HomeMarquee speed={45} delay={0.5}>
-          <Link href="/la-corteza-electrica" className="text-4xl w-full hover:text-orange-500">IRE PAZ Y LA CORTEZA ELÉCTRICA</Link>
+          <Link href="/la-corteza-electrica" className="text-4xl lg:text-5xl w-full hover:text-orange-500">IRE PAZ Y LA CORTEZA ELÉCTRICA</Link>
         </HomeMarquee>
         <HomeMarquee speed={40} delay={2} direction="right">
-          <Link href="/ipjr" className="text-4xl w-full hover:text-teal-700">IPJR</Link>
+          <Link href="/ipjr" className="text-4xl lg:text-5xl w-full hover:text-teal-700">IPJR</Link>
         </HomeMarquee>
         <HomeMarquee speed={60}>
-          <Link href="/supervivencia-visual" className="text-4xl w-full hover:text-red-400">SUPERVIVENCIA VISUAL</Link>
+          <Link href="/supervivencia-visual" className="text-4xl lg:text-5xl w-full hover:text-red-400">SUPERVIVENCIA VISUAL</Link>
         </HomeMarquee>        
       </main>
     </div>
