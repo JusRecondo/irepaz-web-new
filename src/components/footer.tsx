@@ -34,19 +34,25 @@ const rrss = [
 
 
 const Footer = () => {
-  return (
-    <footer className="fixed bottom-0 left-0 w-full p-4">
-        <ul className="w-full flex justify-center items-center gap-6 text-white text-2xl">
-            {rrss.map((item, i) => (
-                <li key={i}>
-                    <a href={item.url} target="_blank" rel="noopener noreferrer" aria-label={`Ir al perfil de ${item.name}`}>
-                        {item.icon}
-                    </a>
-                </li>
-            ))}
-        </ul>
-    </footer>
-  )
+    return (
+        <footer className="fixed bottom-0 left-0 w-full p-4">
+            <ul className="w-full flex justify-center items-center gap-6">
+                {rrss.map((item, i) => (
+                    <li key={i}>
+                        <a 
+                            href={item.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            aria-label={`Ir al perfil de ${item.name}`}
+                            className="text-white hover:text-purple-300 text-2xl transition-colors duration-300"
+                            >
+                            {item.icon}
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </footer>
+    )
 }
 
 export default Footer
